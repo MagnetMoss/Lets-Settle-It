@@ -12,7 +12,8 @@ var users3 = ["user1(1/3)", "user2(1/3)", "user3(1/3)"]
 var users2 = ["user1(1/2)", "user2(1/2)"]
 
 
-
+// If else statement that determines which function to run based off button
+// sellect
 
 
 // function and console log for 4 users
@@ -22,13 +23,14 @@ var users2 = ["user1(1/2)", "user2(1/2)"]
 console.log(random, users4[random]);
 
 
-// function and console log 
+// function and console log for 3 users 
 
 
      random = Math.floor(Math.random()*users3.length);
      
   console.log(random, users3[random]);   
-     
+  
+//   function and console log for 2 users
      
      
      

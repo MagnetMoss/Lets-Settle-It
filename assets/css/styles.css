@@ -1,17 +1,55 @@
 body {
-    background-color: maroon;
+    background-color: white;
     
 }
 
 .headerContainer {
     display: flex;
     justify-content: center;
-    border-bottom: 10px solid black;
+    border-bottom: 7px solid black;
+    background-color: beige;
 }
 
 .title {
-    
     text-align: center;
 }
 
+.font-family{
+    font-family: 'Times New Roman', Times, serif;
+    background: -webkit-linear-gradient(190deg, rgb(3, 43, 3), rgb(107, 141, 107), rgb(145, 143, 77));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card{
+    float: left;
+    max-width: 45%;
+    width: 30%;
+    margin: 5px;
+    background-color: beige;
+}
+
+.card-header{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+input{
+    margin: 15px 0 15px 0;
+    padding: 10px 0 10px 0;
+}
+
+.submitBtn{
+    background-color: green;
+    color: white;
+    margin: 10px 0 15px 0;
+    padding: 8px 0 8px 0;
+}
+
+.submitBtn:hover{
+    cursor: pointer;
+    box-shadow: 0 6.4px 22.4px 0 darkgray;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
 

@@ -2,3 +2,16 @@ body {
     background-color: maroon;
     
 }
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    border-bottom: 10px solid black;
+}
+
+.title {
+    
+    text-align: center;
+}
+
+

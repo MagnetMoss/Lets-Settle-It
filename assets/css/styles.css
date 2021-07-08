@@ -3,6 +3,11 @@ body {
     
 }
 
+@font-face {
+    font-family:'ARB85';
+    src: url('../fonts/ARB85.ttf');
+}
+
 .headerContainer {
     display: flex;
     justify-content: center;
@@ -15,14 +20,14 @@ body {
 }
 
 .font-family{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'ARB85', 'Times New Roman', Times, serif;
     background: -webkit-linear-gradient(190deg, rgb(3, 43, 3), rgb(107, 141, 107), rgb(145, 143, 77));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .card{
-    float: left;
+    /* float: left; */
     max-width: 45%;
     width: 30%;
     margin: 5px;

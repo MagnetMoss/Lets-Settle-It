@@ -4,8 +4,17 @@ body {
 }
 
 @font-face {
-    font-family:'ARB85';
-    src: url('../fonts/ARB85.ttf');
+    font-family:'TheGodfatherfont';
+    src: url('../fonts/TheGodfatherfont.ttf');
+
+
+
+    /* font-family:'AestheticVioletfont';
+    src: url('../fonts/AestheticVioletfont.otf'); */
+
+    /* font-family:'ARB85';
+    src: url('../fonts/ARB85.ttf'); */
+   
 }
 
 .headerContainer {
@@ -20,10 +29,16 @@ body {
 }
 
 .font-family{
+<<<<<<< HEAD
     font-family: 'ARB85', 'Times New Roman', Times, serif;
     background: -webkit-linear-gradient(190deg, rgb(110, 3, 3), rgb(110, 3, 3), rgb(204, 32, 32), rgb(250, 123, 123));
+=======
+    font-family:'TheGodfatherfont', 'Times New Roman', Times, serif;
+    background: -webkit-linear-gradient(190deg, rgb(3, 43, 3), rgb(107, 141, 107), rgb(145, 143, 77));
+>>>>>>> Develop
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 65px;
 }
 
 .card{

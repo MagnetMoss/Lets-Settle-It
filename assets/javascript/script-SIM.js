@@ -67,15 +67,7 @@
 // });
 
 
-fetch("http://www.omdbapi.com/?i=tt3896198&apikey=5ccdba89")
-    // .then((success) => { success.json() } )
-    // .then((movies) => { console.log(movies) } )
-    // .catch((error)=>{ console.log(error)});
-    .then(response => response.json())
-    .then(response => {
-        console.log(response);
-    })
-    .catch(err => console.log(err))
+
 
 
 
@@ -94,11 +86,11 @@ fetch("https://api.themoviedb.org/3/movie/550?api_key=0cd6a3dfb0cc7261caba989278
 
 
     var rand = Math.floor(Math.random() * 20);
-var randPg = Math.floor(Math.random() * 17);
+var randPg = Math.floor(Math.random() * 50);
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "https://api.themoviedb.org/3/discover/movie?vote_average.lte=4&vote_count.gte=25&page=" + randPg + "&include_video=false&include_adult=false&sort_by=popularity.asc&region=US&language=en-US&api_key=0cd6a3dfb0cc7261caba989278533306",
+  "url": "https://api.themoviedb.org/3/discover/movie?&page=" + randPg + "&include_video=false&include_adult=false&sort_by=popularity.dsc&region=US&language=en-US&api_key=0cd6a3dfb0cc7261caba989278533306",
   "method": "GET",
   "headers": {},
   "data": "{}"
@@ -106,5 +98,22 @@ var settings = {
 
 $.ajax(settings).done(function (response) {
   console.log(response);  
-  console.log(response.results[rand]);  
+  console.log(response.results[rand]);
+  fetch(`http://www.omdbapi.com/?t=${response.results[rand].title}&apikey=5ccdba89`)
+    // .then((success) => { success.json() } )
+    // .then((movies) => { console.log(movies) } )
+    // .catch((error)=>{ console.log(error)});
+    .then(response => response.json())
+    .then(response => {
+        console.log(response);
+        alert(response.Title)
+    })
+    .catch(err => console.log(err))  
 });   
+
+
+
+
+// "https://api.themoviedb.org/3/discover/movie?api_key=0cd6a3dfb0cc7261caba989278533306&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate"
+
+// "year="

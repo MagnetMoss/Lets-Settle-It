@@ -21,7 +21,7 @@ body {
 
 .font-family{
     font-family: 'ARB85', 'Times New Roman', Times, serif;
-    background: -webkit-linear-gradient(190deg, rgb(3, 43, 3), rgb(107, 141, 107), rgb(145, 143, 77));
+    background: -webkit-linear-gradient(190deg, rgb(110, 3, 3), rgb(207, 59, 59), beige);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

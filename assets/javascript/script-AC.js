@@ -22,6 +22,6 @@ submitBtn.addEventListener('click', function() {
 
     localStorage.setItem('CustomInput', JSON.stringify(storedArray));
 
-    var userArray = [user1.value, user2.value, user3.value, user4.value];
-    console.log(userArray);
+    // var userArray = [user1.value, user2.value, user3.value, user4.value];
+    // console.log(userArray);
 });

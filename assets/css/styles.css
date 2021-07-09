@@ -27,7 +27,7 @@ body {
 }
 
 .card{
-    max-width: 45%;
+    float: left;
     width: 30%;
     margin: 5px;
     background-color: beige;

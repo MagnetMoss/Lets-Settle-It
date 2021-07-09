@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     border-bottom: 7px solid black;
-    background: -webkit-linear-gradient(180deg, beige, black);
+    background: -webkit-linear-gradient(160deg, rgba(187,124,33,0.604079131652661), beige, rgb(233, 233, 173),rgba(187,124,33,0.604079131652661));
 }
 
 .title {

@@ -1,4 +1,204 @@
 body {
-    background-color: maroon;
+    background-color: white;
     
 }
+
+@font-face {
+    font-family:'ARB85';
+    src: url('../fonts/ARB85.ttf');
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    border-bottom: 7px solid black;
+    background-color: beige;
+}
+
+.title {
+    text-align: center;
+}
+
+.font-family{
+    font-family: 'ARB85', 'Times New Roman', Times, serif;
+    background: -webkit-linear-gradient(190deg, rgb(3, 43, 3), rgb(107, 141, 107), rgb(145, 143, 77));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card{
+    float: left;
+    width: 30%;
+    margin: 5px;
+    background-color: beige;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.card-header{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+input{
+    margin: 15px 0 15px 0;
+    padding: 10px 0 10px 0;
+}
+
+.submitBtn{
+    background-color: green;
+    color: white;
+    margin: 10px 0 15px 0;
+    padding: 8px 0 8px 0;
+}
+
+.submitBtn:hover{
+    cursor: pointer;
+    box-shadow: 0 6.4px 22.4px 0 darkgray;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+aside{
+    border:3px solid black;
+    width: 45%;
+    height: 85vh;
+    margin: 10px;
+    float: right;
+}
+
+.movie{
+
+}
+
+.randomMovie{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* wheel styles */
+.mainbox{
+    position: relative;
+    width: 500px;
+    height: 500px;
+  }
+  .mainbox:after{
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url('arrow-left.png') no-repeat;
+    background-size: 32px;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+   
+  }
+  .box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 10px solid black;
+    overflow: hidden;
+    transition: all ease 3s;
+  }
+
+  span{
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+    border: 3px solid black;
+    
+  }
+  .span1{
+    clip-path: polygon(0 92%, 100% 50%, 0 8%);
+    background-color: #0084ff;
+    top: 120px;
+    left: 0;
+    
+  }
+  .span2{
+    clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+    background-color: #ff4fa1;
+    top: 120px;
+    right: 0;
+  }
+  .span3{
+    clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+    background-color: #80e2da;
+    bottom: 0;
+    left: 120px;
+  }
+  .span4{
+    clip-path: polygon(50% 100%, 92% 0, 8% 0);
+    background-color: #c0d65b;
+    top: 0;
+    left: 120px;
+  }
+
+  .box1 .span3 b{
+    transform: translate(-50%, -50%) rotate(-270deg);
+ }
+ .box1 .span1 b,
+ .box2 .span1 b{
+   transform: translate(-50%, -50%) rotate(185deg);
+ }
+ .box2 .span3 b{
+   transform: translate(-50%, -50%) rotate(90deg);
+ }
+ .box1 .span4 b,
+ .box2 .span4 b{
+   transform: translate(-50%, -50%) rotate(-85deg);
+ }
+ 
+ span b{
+   font-size: 24px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ 
+ }
+ 
+ .box2{
+   width: 100%;
+   height: 100%;
+   transform: rotate(-135deg);
+ }
+
+ .spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 530px;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: #eb6cd5;
+    color: #fff;
+    box-shadow: 0px 20px 20px #000;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: grab;
+  }
+  .spin:active{
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+  }
+  
+  .mainbox.animate:after{
+    animation: animateArrow 1s ease infinite;
+  }
+  @keyframes animateArrow{
+    50%{
+      right: -40px;
+    }
+  }

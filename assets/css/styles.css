@@ -27,11 +27,14 @@ body {
 }
 
 .card{
-    /* float: left; */
     max-width: 45%;
     width: 30%;
     margin: 5px;
     background-color: beige;
+}
+
+.w-100{
+    width: 100%;
 }
 
 .card-header{
@@ -58,3 +61,19 @@ input{
     transform: scale(1.03);
 }
 
+aside{
+    border:3px solid black;
+    width: 45%;
+    height: 85vh;
+    margin: 10px;
+    float: right;
+}
+
+.movie{
+
+}
+
+.randomMovie{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}

@@ -24,7 +24,7 @@
             <div class="card">
                 <form>
                     <div># of Players</div>
-                    <select name="numPlay" id="players" onchange="locStor()">
+                    <select name="numPlay" id="players">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -42,6 +42,7 @@
                         <option value="2">Computer Selector</option>
                     </select>
                 </form>
+                <form>
                 <div class="card w-100">
                     <h3 class="card-header">Custom Input:</h3>
                     <input id="input-1" type="text" placeholder="Input 1">
@@ -49,12 +50,15 @@
                     <input id="input-3" type="text" placeholder="Input 3">
                     <input id="input-4" type="text" placeholder="Input 4">
                     <button type="submit" value="submit" class="submitBtn" id="submitBtn">Submit</button>
-                </div>        
+                </div> 
+            </form>       
             </div>
             <aside class="movie">
-                <div>
+                <div class="randomMovieDisplay">
                     <h3 class="randomMovie">Random Movie Selector</h3>
+                    
                 </div>
+
             </aside>
         </div>
 

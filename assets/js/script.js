@@ -157,11 +157,17 @@ var numPlayers = document.querySelector("#players")
 var typeCon = document.querySelector("#conflict")
 var conflictRes = document.querySelector("#conRes")
 var submitBtn = document.querySelector("#submit")
+var WoD= document.querySelector("#wheelbox")
+var aside= document.querySelector("#movie")
 
 console.log(numPlayers)
 console.log(typeCon)
 console.log(conflictRes)
+console.log(WoD)
+console.log(aside)
 
+WoD.style.display= "none"
+aside.style.display= "none"
 typeCon.style.display= "none"
 conflictRes.style.display= "none"
 

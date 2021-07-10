@@ -3,6 +3,11 @@ body {
     
 }
 
+img {
+  width: auto;
+  height: auto;
+}
+
 @font-face {
     font-family:'ARB85';
     src: url('../fonts/ARB85.ttf');

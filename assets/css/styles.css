@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: rgb(159, 179, 243);
     
 }
 
@@ -38,7 +38,8 @@ body {
 }
 
 .card-header{
-    font-family: 'Times New Roman', Times, serif;
+  font-family:'ARB85';
+  text-align: center;
 
 }
 
@@ -47,7 +48,7 @@ input{
     padding: 10px 0 10px 0;
 }
 
-.submitBtn{
+ .submitBtn{
     background-color: green;
     color: white;
     margin: 10px 0 15px 0;
@@ -59,7 +60,7 @@ input{
     box-shadow: 0 6.4px 22.4px 0 darkgray;
     transition: transform 150ms;
     transform: scale(1.03);
-}
+} 
 
 aside{
     border:3px solid black;
@@ -79,8 +80,18 @@ aside{
 
 .randomMovie{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'ARB85';
 }
+
+#wheelbox{
+  margin: 30px 0 20px 90px;
+  
+}
+#wheelbox h1{
+  font-family:'ARB85';
+}
+
+
 
 /* wheel styles */
 
@@ -97,7 +108,7 @@ aside{
     content: '';
     width: 32px;
     height: 32px;
-    background: url('arrow-left.png') no-repeat;
+    /* background: url('arrow-left.png') no-repeat; */
     background-size: 32px;
     right: -30px;
     top: 50%;

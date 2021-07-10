@@ -98,7 +98,7 @@ function myfunction(){
 	element.classList.remove('animate');
 	setTimeout(function(){
 		element.classList.add('animate');
-	}, 5000); //5000 = 5 second
+	}, 3000); 
 }
 
 var input1 = document.getElementById('input-1');
@@ -175,7 +175,7 @@ typeCon.addEventListener("change", function () {
 
 submitBtn.addEventListener("click" , function (){
     console.log("click click click");
-})
+ })
 
 //if custom direct to wheel
 //if movie direct to sim

@@ -1,5 +1,7 @@
 # Lets-Settle-It
 Conflict Resolution App for indecisive people.
+
+Working Link: https://magnetmoss.github.io/Lets-Settle-It/
 <!-- In progress -->
 
 

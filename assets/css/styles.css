@@ -65,13 +65,11 @@ aside{
     border:3px solid black;
     width: 45%;
     height: 85vh;
-    margin: 10px;
+    margin-top : -480px;
     float: right;
 }
 
-.movie{
 
-}
 
 .randomMovie{
     text-align: center;
@@ -179,7 +177,7 @@ aside{
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: 530px;
+   
     transform: translate(-50%, -50%);
     width: 75px;
     height: 75px;

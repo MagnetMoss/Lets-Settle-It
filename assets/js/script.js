@@ -21,9 +21,11 @@ submitBtn.addEventListener('click', function() {
 
 
 // sim js
+// future Dev have reset movie button generate new movie
+
 var posterImg = document.getElementById("movie")
 
-fetch("https://api.themoviedb.org/3/movie/550?api_key=0cd6a3dfb0cc7261caba989278533306")
+ fetch("https://api.themoviedb.org/3/movie/550?api_key=0cd6a3dfb0cc7261caba989278533306")
     // .then((success) => { success.json() } )
     // .then((movies) => { console.log(movies) } )
     // .catch((error)=>{ console.log(error)});
@@ -51,7 +53,7 @@ var settings = {
 $.ajax(settings).done(function (response) {
   console.log(response);  
   console.log(response.results[rand]);
-  fetch(`http://www.omdbapi.com/?t=${response.results[rand].title}&apikey=5ccdba89`)
+   fetch(`http://www.omdbapi.com/?t=${response.results[rand].title}&apikey=5ccdba89`)
     // .then((success) => { success.json() } )
     // .then((movies) => { console.log(movies) } )
     // .catch((error)=>{ console.log(error)});
@@ -66,7 +68,7 @@ $.ajax(settings).done(function (response) {
         img.src = image
         posterImg.append(img)
         document.querySelector("#movieDescription").innerHTML=`${response.Plot}`
-        document.querySelector("#metascore").innerHTML=`${response.Metascore}`
+        // document.querySelector("#metascore").innerHTML=`${response.Metascore}`
         document.querySelector("#runtime").innerHTML=`${response.Runtime}`
         // TODO: need to add to the container in html 
 
@@ -153,29 +155,29 @@ input4.addEventListener("change", function (e){
 
 // jared js
 
-var numPlayers = document.querySelector("#players")
-var typeCon = document.querySelector("#conflict")
-var conflictRes = document.querySelector("#conRes")
-var submitBtn = document.querySelector("#submit")
+// var numPlayers = document.querySelector("#players")
+// var typeCon = document.querySelector("#conflict")
+// var conflictRes = document.querySelector("#conRes")
+// var submitBtn = document.querySelector("#submit")
 
-console.log(numPlayers)
-console.log(typeCon)
-console.log(conflictRes)
+// console.log(numPlayers)
+// console.log(typeCon)
+// console.log(conflictRes)
 
-typeCon.style.display= "none"
-conflictRes.style.display= "none"
+// typeCon.style.display= "none"
+// conflictRes.style.display= "none"
 
-numPlayers.addEventListener("change", function () {
-    typeCon.style.display= "block"
-})
+// numPlayers.addEventListener("change", function () {
+//     typeCon.style.display= "block"
+// })
 
-typeCon.addEventListener("change", function () {
-    conflictRes.style.display= "block"
-})
+// typeCon.addEventListener("change", function () {
+//     conflictRes.style.display= "block"
+// })
 
-submitBtn.addEventListener("click" , function (){
-    console.log("click click click");
- })
+// submitBtn.addEventListener("click" , function (){
+//     console.log("click click click");
+//  })
 
 //if custom direct to wheel
 //if movie direct to sim
@@ -223,3 +225,5 @@ console.log(random, users4[random]);
      random = Math.floor(Math.random()*users2.length);
      
      console.log(random, users2[random]);
+
+    //  reset movie

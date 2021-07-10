@@ -68,8 +68,14 @@ aside{
     height: 85vh;
     margin-top : -480px;
     float: right;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
 }
-
+/* #randomMovieDisplay{
+  flex-direction: column;
+} */
 
 
 .randomMovie{

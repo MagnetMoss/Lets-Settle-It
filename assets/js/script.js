@@ -21,6 +21,8 @@ submitBtn.addEventListener('click', function() {
 
 
 // sim js
+var posterImg = document.getElementById("movie")
+
 fetch("https://api.themoviedb.org/3/movie/550?api_key=0cd6a3dfb0cc7261caba989278533306")
     // .then((success) => { success.json() } )
     // .then((movies) => { console.log(movies) } )
@@ -56,7 +58,27 @@ $.ajax(settings).done(function (response) {
     .then(response => response.json())
     .then(response => {
         console.log(response);
-        alert(response.Title)
+        document.querySelector("#randomMovieDisplay").innerHTML=`${response.Title}`
+        // document.querySelector(".imagePoster").innerHTML=`${response.Poster}`
+        var image = response.Poster
+        console.log(image)
+        var img = document.createElement("img")
+        img.src = image
+        posterImg.append(img)
+        document.querySelector("#movieDescription").innerHTML=`${response.Plot}`
+        document.querySelector("#metascore").innerHTML=`${response.Metascore}`
+        document.querySelector("#runtime").innerHTML=`${response.Runtime}`
+        // TODO: need to add to the container in html 
+
+        // input1.addEventListener("change", function (e){
+        //     var span1= document.querySelectorAll(".span1")
+        //     for (let index = 0; index < span1.length; index++) {
+        //         const element = span1[index];
+        //         element.innerHTML=`<b>${e.target.value}</b>`
+        //     }
+        //     console.log(e.target.value)
+        // })
+
     })
     .catch(err => console.log(err))  
 });   

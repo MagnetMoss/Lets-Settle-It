@@ -83,6 +83,10 @@ aside{
 }
 
 /* wheel styles */
+
+.wheel {
+    margin-top: 200px;
+}
 .mainbox{
     position: relative;
     width: 500px;
@@ -108,7 +112,7 @@ aside{
     border-radius: 50%;
     border: 10px solid black;
     overflow: hidden;
-    transition: all ease 3s;
+    transition: all ease 1s;
   }
 
   span{

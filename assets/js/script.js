@@ -53,7 +53,7 @@ var settings = {
 $.ajax(settings).done(function (response) {
   console.log(response);  
   console.log(response.results[rand]);
-   fetch(`http://www.omdbapi.com/?t=${response.results[rand].title}&apikey=5ccdba89`)
+   fetch(`https://www.omdbapi.com/?t=${response.results[rand].title}&apikey=5ccdba89`)
     // .then((success) => { success.json() } )
     // .then((movies) => { console.log(movies) } )
     // .catch((error)=>{ console.log(error)});

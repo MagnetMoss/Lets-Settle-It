@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Settle It!- Conflict resolution for the indecisive human</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/foundation.css">
@@ -20,28 +20,66 @@
         </div>
     </header>
     <main>
+
+<!-- wheel -->
+<div id="wheelbox">
+    <h1>The Wheel of Destiny</h1>
+    <div id="mainbox" class="mainbox">
+        <div id="box" class="box">
+            <div class="box1">
+                <span class="span1"><b>USER1</b></span>
+                <span class="span2"><b>USER2</b></span>
+                <span class="span3"><b>USER3</b></span>
+                <span class="span4"><b>USER4</b></span>
+            </div>
+            <div class="box2">
+                <span class="span1"><b>USER1</b></span>
+                <span class="span2"><b>USER2</b></span>
+                <span class="span3"><b>USER3</b></span>
+                <span class="span4"><b>USER4</b></span>
+            </div>
+        </div>
+
+        <button class="spin" onclick="myfunction()">👇</button>
+    </div>
+
+  
+
+
+
+
+
+
+</div>
+
         <div class="small-4">
             <div class="card">
-                <form>
-                    <div># of Players</div>
+
+                <!--future dev add numofUsers to dynamicly change user input  -->
+                
+                
+                
+                
+                <!-- <form> -->
+                    <!-- <div># of Players</div>
                     <select name="numPlay" id="players">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
-                    </select>
-                    <div class="hide">Type</div>
+                    </select> -->
+                    <!-- <div class="hide">Type</div>
                     <select name="Type of Conflict" id="conflict">
                         <option value="1">Movie To Watch</option>
-                        <option value="2">Event/Activities</option>
-                        <option value="3">Custom</option>
-                    </select>
-                    <div class="hide">Mode</div>
+                        <option value="2">Event/Activities</option> -->
+                        <!-- <option value="3">Custom</option>
+                    </select> -->
+                    <!-- <div class="hide">Mode</div>
                     <select name="Mode of CR" id="conRes">
-                        <option value="1">Custom</option>
-                        <option value="2">Computer Selector</option>
-                    </select>
-                </form>
+                        <option value="1">Random Movie</option>
+                        <option value="2">Wheel of Destiny</option>
+                    </select> -->
+                <!-- </form> -->
                 <form>
                 <div class="card w-100">
                     <h3 class="card-header">Custom Input:</h3>
@@ -49,63 +87,33 @@
                     <input id="input-2" type="text" placeholder="Input 2">
                     <input id="input-3" type="text" placeholder="Input 3">
                     <input id="input-4" type="text" placeholder="Input 4">
-                    <button type="submit" value="submit" class="submitBtn" id="submitBtn">Submit</button>
+                  <button type="submit" value="submit" class="submitBtn" id="submitBtn">Reset</button>
                 </div> 
             </form>       
             </div>
-            <aside class="movie">
-                <div class="randomMovieDisplay">
-                    <h3 class="randomMovie">Random Movie Selector</h3>
-                    
-                </div>
+            <aside id="movie">
+               
+                
+                    <h3 id="randomMovie">Random Movie Selector</h3>
+    
+                    <div id="randomMovieDisplay"> </div>
+                    <div id="movieDescription"></div>
+                    <div id="runtime"></div>
+               
 
             </aside>
         </div>
-
-<!-- wheel -->
-        <div>
-            <div id="mainbox" class="mainbox">
-                <div id="box" class="box">
-                    <div class="box1">
-                        <span class="span1"><b>USER1</b></span>
-                        <span class="span2"><b>USER2</b></span>
-                        <span class="span3"><b>USER3</b></span>
-                        <span class="span4"><b>USER4</b></span>
-                    </div>
-                    <div class="box2">
-                        <span class="span1"><b>USER1</b></span>
-                        <span class="span2"><b>USER2</b></span>
-                        <span class="span3"><b>USER3</b></span>
-                        <span class="span4"><b>USER4</b></span>
-                    </div>
-                </div>
-        
-                <button class="spin" onclick="myfunction()">Settle It</button>
-            </div>
-        
-          
-      
-
-
-
-
-
-        </div>
-
-
-
-
     </main>
-
+</body>
     <script src="assets/javascript/vendor.js"></script>
     <script src="assets/javascript/foundation.js"></script>
-    <script src="./assets/javascript/script-AC.js"></script>
+    <!-- <script src="./assets/javascript/script-AC.js"></script>
     <script src="./assets/javascript/script-KEI.js"></script>
     <script src="./assets/javascript/script-SIM.js"></script>
-    <script src="./assets/javascript/script-JR.js"></script>
-    <script src="./assets/js/wheel.js"></script>
+    <script src="./assets/javascript/script-JR.js"></script> -->
+    <!-- <script src="./assets/js/wheel.js"></script> -->
     <script src= "assets/js/script.js"></script>
 
-</body>
+
 
 </html>

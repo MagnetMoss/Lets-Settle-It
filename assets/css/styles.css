@@ -1,8 +1,3 @@
-body {
-    background-color: white;
-    
-}
-
 @font-face {
     /* font-family:'GrandRoyal';
     src: url('../fonts/GrandRoyal.otf'); */
@@ -13,6 +8,10 @@ body {
     /* font-family:'ARB85';
     src: url('../fonts/ARB85.ttf'); */
    
+}
+@font-face {
+  font-family: 'KIN688';
+  src: url('../fonts/KIN668.TTF');
 }
 
 .headerContainer {
@@ -48,7 +47,6 @@ body {
 
 .card-header{
     font-family: 'AestheticVioletfont', 'Times New Roman', Times, serif;
-
 }
 
 input{
@@ -68,27 +66,79 @@ input{
     box-shadow: 0 6.4px 22.4px 0 darkgray;
     transition: transform 150ms;
     transform: scale(1.03);
-}
+} 
 
 aside{
     border:3px solid black;
-    width: 45%;
-    height: 85vh;
-    margin: 10px;
+    width: 47%;
+    height: 150vh;
+    margin-top : -480px;
     float: right;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
 }
+/* #randomMovieDisplay{
+  flex-direction: column;
+} */
 
-.movie{
 
-}
 
-.randomMovie{
+#randomMovie{
     text-align: center;
     font-family: 'AestheticVioletfont', 'Times New Roman', Times, serif;
     padding-top: 7px;
+  
+}
+#randomMovieDisplay{
+  font-family:'KIN688';
+  font-weight: bold;
+  font-size: x-large;
+  text-decoration: underline;
 }
 
+#movieDescription{
+  font-family: 'KIN688';
+  font-size: x-large;
+}
+
+#runtime{
+  font-family:'KIN688' ;
+  
+  font-size: x-large;
+}
+
+#wheelbox{
+  margin: 30px 0 20px 90px;
+  font-family: monospace;
+  
+}
+#wheelbox h1{
+  font-family:'AestheticVioletfont';
+  
+}
+
+/*  Future Dev for reset movie button */
+/* #reselect{
+  background-color: green;
+  color: white;
+  margin: 10px 0 15px 0;
+  padding: 8px 0 8px 0;
+}
+#reselect:hover{
+  cursor: pointer;
+  box-shadow: 0 6.4px 22.4px 0 darkgray;
+  transition: transform 150ms;
+  transform: scale(1.03);
+} */
+
+
 /* wheel styles */
+
+.wheel {
+    margin-top: 200px;
+}
 .mainbox{
     position: relative;
     width: 500px;
@@ -99,7 +149,7 @@ aside{
     content: '';
     width: 32px;
     height: 32px;
-    background: url('arrow-left.png') no-repeat;
+    /* background: url('arrow-left.png') no-repeat; */
     background-size: 32px;
     right: -30px;
     top: 50%;
@@ -114,7 +164,7 @@ aside{
     border-radius: 50%;
     border: 10px solid black;
     overflow: hidden;
-    transition: all ease 3s;
+    transition: all ease 1s;
   }
 
   span{
@@ -185,7 +235,7 @@ aside{
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: 530px;
+   
     transform: translate(-50%, -50%);
     width: 75px;
     height: 75px;

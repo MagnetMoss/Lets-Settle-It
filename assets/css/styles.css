@@ -4,8 +4,8 @@ body {
 }
 
 @font-face {
-    font-family:'TheGodfatherfont';
-    src: url('../fonts/TheGodfatherfont.ttf');
+    font-family:'Moonrising';
+    src: url('../fonts/Moonrising.otf');
 
     font-family:'AestheticVioletfont';
     src: url('../fonts/AestheticVioletfont.otf'); 
@@ -27,11 +27,12 @@ body {
 }
 
 .font-family{
-    font-family:'TheGodfatherfont', 'AestheticVioletfont', 'Times New Roman', Times, serif;
-    background: -webkit-linear-gradient(190deg, rgb(221, 144, 144), rgb(161, 62, 62), rgb(82, 2, 2));
+    font-family: 'AestheticVioletfont', 'Times New Roman', Times, serif;
+    background: -webkit-linear-gradient(190deg, rgb(82, 2, 2), rgb(221, 144, 144), rgb(161, 62, 62), rgb(82, 2, 2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* font-size: 65px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .card{
